@@ -62,9 +62,15 @@ function addMessage(data){
     addDetails(data[0].PostOffice);
 }
 async function numberOfPincode(zip){
- let response = await fetch(`https://api.postalpincode.in/pincode/${zip}`);
- let data = await response.json();
- addMessage(data);
+try {
+    console.log(zip)
+    // let response = await fetch(`https://ipinfo.io/${zip}/geo`);
+    let response = await fetch(`https://api.postalpincode.in/pincode/${zip}`);
+    let data = await response.json();
+    addMessage(data);
+} catch (error) {
+    console.log(error,"during fetch api.potal");
+}
 }
 
 function addList(jsonData){
@@ -119,11 +125,11 @@ const accessdata = async ()=>{
     az.innerText=ip;
     console.log(ip);
     try {
-    let response = await fetch(`http://ip-api.com/json/${ip}`);
+    let response = await fetch(`https://ip-api.com/json/${ip}`);
     let jsonData = await response.json();
     loadData(jsonData);
     } catch (error) {
-        console.log(error);
+        console.log(error,"Access the data");
     }
 }
 accessdata();
