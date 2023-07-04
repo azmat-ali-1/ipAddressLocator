@@ -1,0 +1,57 @@
+html{
+    background-color: rgb(75, 67, 67);
+}
+.card{
+    border: 1px solid gray;
+    font-size: 22px;
+    width: 40%;
+    margin-bottom: 1%;
+    padding: 2%;
+}
+span{
+    font-size: 18px;
+    color: white;
+}
+#list li{
+font-size: 22px;
+}
+li{
+    list-style-type: none;
+   
+    color: rgba(255, 255, 255, 0.688);
+}
+#details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#search{
+    width: 100%;
+    font-size: 22px;
+    padding: 5px;
+    margin: 3% 0;
+}
+.mainPage{
+    margin:1% 10%;
+    background-color: rgba(123, 108, 108, 0.232);
+    padding: 0 5%;
+    color: white;
+    width: 70vw;
+}
+#map{
+    margin: 3% 0;
+}
+#ip{
+    color: white;
+}
+#table{
+    width: 100%;
+}
+#table td{
+    margin: 10%;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.688);
+}
+#table span{
+    font-size: 18px;
+}
